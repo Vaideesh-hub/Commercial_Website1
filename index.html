@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopNova - Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Shop<span>Nova.</span></div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#account">Account</a>
+    </nav>
+    <a href="#products" class="cart">🛒 Shop Now</a>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1>Discover Your Style</h1>
+        <p>Explore the latest trends and shop your favourite products at amazing prices.</p>
+        <a href="#products" class="btn">Explore Products →</a>
+    </div>
+</section>
+
+<section class="products" id="products">
+    <h2>Our Popular Products</h2>
+    <p class="subtitle">Discover our best-selling collections</p>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500" alt="Headphones">
+            <h3>Wireless Headphones</h3>
+            <p>Premium sound quality</p>
+            <h4>₹1,999</h4>
+            <button onclick="buy('Wireless Headphones')">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500" alt="Watch">
+            <h3>Smart Watch</h3>
+            <p>Modern lifestyle watch</p>
+            <h4>₹2,499</h4>
+            <button onclick="buy('Smart Watch')">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500" alt="Shoes">
+            <h3>Sports Shoes</h3>
+            <p>Comfortable running shoes</p>
+            <h4>₹1,799</h4>
+            <button onclick="buy('Sports Shoes')">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500" alt="Camera">
+            <h3>Digital Camera</h3>
+            <p>Capture every moment</p>
+            <h4>₹5,999</h4>
+            <button onclick="buy('Digital Camera')">Buy Now</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2>About ShopNova</h2>
+    <p>
+        ShopNova is an online shopping platform that provides
+        high-quality products at affordable prices. Our goal is
+        to make shopping simple, convenient and enjoyable.
+    </p>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@shopnova.com</p>
+    <p>Phone: +91 98765 43210</p>
+    <p>Location: Chennai, Tamil Nadu</p>
+</section>
+
+<section class="account" id="account">
+    <h2>User Account</h2>
+    <form onsubmit="login(event)">
+        <input type="email" placeholder="Enter your email" required>
+        <input type="password" placeholder="Enter your password" required>
+        <button type="submit">Login</button>
+    </form>
+</section>
+
+<footer>
+    <h2>ShopNova.</h2>
+    <p>Follow us on social media</p>
+    <div class="social">
+        <a href="https://www.instagram.com/">Instagram</a>
+        <a href="https://www.facebook.com/">Facebook</a>
+        <a href="https://www.youtube.com/">YouTube</a>
+    </div>
+    <p>© 2026 ShopNova. All Rights Reserved.</p>
+</footer>
+
+<script>
+    function buy(product) {
+        alert("Thank you for choosing " + product + "!");
+    }
+
+    function login(event) {
+        event.preventDefault();
+        alert("Login successful! Welcome to ShopNova.");
+    }
+</script>
+
+</body>
+</html>

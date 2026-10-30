@@ -1,0 +1,247 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f8f9fc;
+    color: #222;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 7%;
+    background: white;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #172554;
+}
+
+.logo span {
+    color: #f97316;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f97316;
+}
+
+.cart, .btn {
+    background: #f97316;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.8), rgba(0,0,0,0.1)),
+    url("https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600")
+    center/cover;
+    color: white;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.btn:hover, .cart:hover {
+    background: #ea580c;
+}
+
+.products {
+    padding: 65px 7%;
+    text-align: center;
+}
+
+.products h2, .about h2, .contact h2,
+.account h2 {
+    font-size: 32px;
+    color: #172554;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 35px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.product-card {
+    background: white;
+    width: 250px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 15px 0 8px;
+}
+
+.product-card p {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.product-card h4 {
+    color: #f97316;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+button {
+    background: #172554;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #f97316;
+}
+
+.about {
+    background: #eaf0ff;
+    text-align: center;
+    padding: 65px 15%;
+}
+
+.about p {
+    line-height: 1.8;
+    color: #555;
+    font-size: 17px;
+}
+
+.contact {
+    padding: 60px 20px;
+    text-align: center;
+    line-height: 2;
+}
+
+.account {
+    background: #eaf0ff;
+    padding: 55px 20px;
+    text-align: center;
+}
+
+.account form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 350px;
+    margin: 25px auto 0;
+}
+
+.account input {
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+footer {
+    background: #172554;
+    color: white;
+    padding: 35px 20px;
+    text-align: center;
+    line-height: 2;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 12px;
+}
+
+.social a {
+    color: #fb923c;
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .product-container {
+        align-items: center;
+    }
+}
